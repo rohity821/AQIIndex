@@ -31,4 +31,4 @@ Dependency Manager Used: Cocoapods
 
 
 Starting Time : Started around 2pm on sunday 20 June. 
-Ending Time: 6:00 pm Sunday 20 June
+Ending Time: 5:59 pm Sunday 20 June
