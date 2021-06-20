@@ -19,7 +19,6 @@ protocol WebSocketDelegate: AnyObject {
     func websocket(didFail error: WebSocketError)
 }
 
-
 enum WebSocketError: Error {
     case couldNotParseJSON
     case noResponseRecieved
@@ -58,7 +57,6 @@ class WebSocketTask: NSObject, WebSocketInterface, URLSessionWebSocketDelegate {
         if let error = error {
           print("Error when sending PING \(error)")
         } else {
-            print("Web Socket connection is alive")
             DispatchQueue.global().asyncAfter(deadline: .now() + 5) { [weak self] in
                 self?.ping()
             }
@@ -77,16 +75,15 @@ class WebSocketTask: NSObject, WebSocketInterface, URLSessionWebSocketDelegate {
         switch result {
         case .success(let message):
           switch message {
-          case .data(let data):
-            print("Data received \(data)")
+          case .data( _):
+              break
           case .string(let text):
             print("Text received \(text)")
               self?.parseResponse(responseText: text)
           @unknown default:
               print("unknown case expected")
           }
-        case .failure(let error):
-          print("Error when receiving \(error)")
+        case .failure( _):
             self?.delegate?.websocket(didFail: .noResponseRecieved)
         }
           self?.receive()
@@ -97,7 +94,6 @@ class WebSocketTask: NSObject, WebSocketInterface, URLSessionWebSocketDelegate {
         let data = responseText.data(using: .utf8)!
         do {
             if let jsonArray = try JSONSerialization.jsonObject(with: data, options : .allowFragments) as? [[String: Any]] {
-                print("JSON : \(jsonArray)")
                 dataModel.updateData(responseArray: jsonArray)
                 delegate?.websocket(didFetchResponse: dataModel)
             } else {
@@ -113,7 +109,6 @@ class WebSocketTask: NSObject, WebSocketInterface, URLSessionWebSocketDelegate {
     //MARK: URLSessionWebSocketDelegate
     
     func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol protocol: String?) {
-        print("Web Socket did connect")
         ping()
         receive()
     }

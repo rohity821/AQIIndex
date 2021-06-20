@@ -18,10 +18,10 @@ struct NetworkConstants {
     static let socketUrl = "ws://city-ws.herokuapp.com"
 }
 
-class ObjectBuilderTask {
+class AppBuilderTask {
     private init() { }
     
-    static let shared = ObjectBuilderTask()
+    static let shared = AppBuilderTask()
     
     func getRootViewControllerWithDependencies() -> UINavigationController? {
         let storyboard = UIStoryboard(name: Constants.mainStoryboard, bundle: nil)

@@ -17,8 +17,6 @@ struct FontDefaults {
             return iPhoneChartSettings
         }
     }
-
-    
     
     fileprivate static var iPadChartSettings: ChartSettings {
         var chartSettings = ChartSettings()

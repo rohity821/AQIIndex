@@ -24,7 +24,7 @@
 		73CDC26D267E7A5600DD259D /* CityAQITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC26C267E7A5600DD259D /* CityAQITableCell.swift */; };
 		73CDC270267E80E000DD259D /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC26F267E80E000DD259D /* ColorUtil.swift */; };
 		73CDC273267F034800DD259D /* WebSocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC272267F034800DD259D /* WebSocketTask.swift */; };
-		73CDC276267F09DC00DD259D /* ObjectBuilderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC275267F09DC00DD259D /* ObjectBuilderTask.swift */; };
+		73CDC276267F09DC00DD259D /* AppBuilderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC275267F09DC00DD259D /* AppBuilderTask.swift */; };
 		73CDC279267F21C000DD259D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC278267F21C000DD259D /* BaseNavigationController.swift */; };
 		D8D99762972028989F79A94E /* Pods_AirQualityIndex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADA594D84C2254CD8EC1E47 /* Pods_AirQualityIndex.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,7 @@
 		73CDC26C267E7A5600DD259D /* CityAQITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAQITableCell.swift; sourceTree = "<group>"; };
 		73CDC26F267E80E000DD259D /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		73CDC272267F034800DD259D /* WebSocketTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTask.swift; sourceTree = "<group>"; };
-		73CDC275267F09DC00DD259D /* ObjectBuilderTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBuilderTask.swift; sourceTree = "<group>"; };
+		73CDC275267F09DC00DD259D /* AppBuilderTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilderTask.swift; sourceTree = "<group>"; };
 		73CDC278267F21C000DD259D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		8435F58D3876004068F020C7 /* Pods-AirQualityIndex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityIndex.debug.xcconfig"; path = "Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +173,7 @@
 		73CDC274267F09B300DD259D /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				73CDC275267F09DC00DD259D /* ObjectBuilderTask.swift */,
+				73CDC275267F09DC00DD259D /* AppBuilderTask.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CDC264267E574000DD259D /* AQIPresenter.swift in Sources */,
-				73CDC276267F09DC00DD259D /* ObjectBuilderTask.swift in Sources */,
+				73CDC276267F09DC00DD259D /* AppBuilderTask.swift in Sources */,
 				73CDC273267F034800DD259D /* WebSocketTask.swift in Sources */,
 				73CDC269267E747F00DD259D /* AQIDataModel.swift in Sources */,
 				73CDC266267E575300DD259D /* AQIInteractor.swift in Sources */,

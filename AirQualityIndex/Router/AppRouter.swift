@@ -16,7 +16,7 @@ class AppRouter {
     
     func navigateToDetailView(cityData: CityDataModel,
                               navigationController: UINavigationController) {
-        if let detailVC = ObjectBuilderTask.shared.getAQIDetailController(cityData: cityData) {
+        if let detailVC = AppBuilderTask.shared.getAQIDetailController(cityData: cityData) {
             navigationController.pushViewController(detailVC, animated: true)
         }
     }
