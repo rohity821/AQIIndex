@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73202E30267F47880047B399 /* AQIDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E2F267F47880047B399 /* AQIDetailController.swift */; };
+		73202E33267F47E70047B399 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E32267F47E70047B399 /* AppRouter.swift */; };
+		73202E35267F4BB10047B399 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E34267F4BB10047B399 /* Env.swift */; };
+		73202E37267F4BE00047B399 /* FontDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E36267F4BE00047B399 /* FontDefaults.swift */; };
+		73202E39267F5ED60047B399 /* AQIDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E38267F5ED60047B399 /* AQIDetailPresenter.swift */; };
 		73CDC24F267E3F0C00DD259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC24E267E3F0C00DD259D /* AppDelegate.swift */; };
 		73CDC251267E3F0C00DD259D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC250267E3F0C00DD259D /* SceneDelegate.swift */; };
 		73CDC253267E3F0C00DD259D /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC252267E3F0C00DD259D /* AQIViewController.swift */; };
@@ -21,9 +26,17 @@
 		73CDC273267F034800DD259D /* WebSocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC272267F034800DD259D /* WebSocketTask.swift */; };
 		73CDC276267F09DC00DD259D /* ObjectBuilderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC275267F09DC00DD259D /* ObjectBuilderTask.swift */; };
 		73CDC279267F21C000DD259D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC278267F21C000DD259D /* BaseNavigationController.swift */; };
+		D8D99762972028989F79A94E /* Pods_AirQualityIndex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADA594D84C2254CD8EC1E47 /* Pods_AirQualityIndex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2574F70D2C057238EE922256 /* Pods-AirQualityIndex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityIndex.release.xcconfig"; path = "Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex.release.xcconfig"; sourceTree = "<group>"; };
+		2ADA594D84C2254CD8EC1E47 /* Pods_AirQualityIndex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirQualityIndex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73202E2F267F47880047B399 /* AQIDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIDetailController.swift; sourceTree = "<group>"; };
+		73202E32267F47E70047B399 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		73202E34267F4BB10047B399 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		73202E36267F4BE00047B399 /* FontDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDefaults.swift; sourceTree = "<group>"; };
+		73202E38267F5ED60047B399 /* AQIDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIDetailPresenter.swift; sourceTree = "<group>"; };
 		73CDC24B267E3F0C00DD259D /* AirQualityIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQualityIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CDC24E267E3F0C00DD259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73CDC250267E3F0C00DD259D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +53,7 @@
 		73CDC272267F034800DD259D /* WebSocketTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTask.swift; sourceTree = "<group>"; };
 		73CDC275267F09DC00DD259D /* ObjectBuilderTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBuilderTask.swift; sourceTree = "<group>"; };
 		73CDC278267F21C000DD259D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		8435F58D3876004068F020C7 /* Pods-AirQualityIndex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirQualityIndex.debug.xcconfig"; path = "Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +61,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D99762972028989F79A94E /* Pods_AirQualityIndex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6141F13626F798BA822548CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8435F58D3876004068F020C7 /* Pods-AirQualityIndex.debug.xcconfig */,
+				2574F70D2C057238EE922256 /* Pods-AirQualityIndex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73202E2E267F47750047B399 /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				73202E2F267F47880047B399 /* AQIDetailController.swift */,
+				73202E38267F5ED60047B399 /* AQIDetailPresenter.swift */,
+			);
+			path = DetailController;
+			sourceTree = "<group>";
+		};
+		73202E31267F47DC0047B399 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				73202E32267F47E70047B399 /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		73CDC242267E3F0B00DD259D = {
 			isa = PBXGroup;
 			children = (
 				73CDC24D267E3F0C00DD259D /* AirQualityIndex */,
 				73CDC24C267E3F0C00DD259D /* Products */,
+				6141F13626F798BA822548CB /* Pods */,
+				7654D304819D16114E1F2E8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +115,8 @@
 		73CDC24D267E3F0C00DD259D /* AirQualityIndex */ = {
 			isa = PBXGroup;
 			children = (
+				73202E31267F47DC0047B399 /* Router */,
+				73CDC274267F09B300DD259D /* Builder */,
 				73CDC26E267E80CA00DD259D /* Utils */,
 				73CDC24E267E3F0C00DD259D /* AppDelegate.swift */,
 				73CDC250267E3F0C00DD259D /* SceneDelegate.swift */,
@@ -87,8 +132,8 @@
 		73CDC262267E572700DD259D /* AQI */ = {
 			isa = PBXGroup;
 			children = (
+				73202E2E267F47750047B399 /* DetailController */,
 				73CDC277267F21A100DD259D /* BaseClass */,
-				73CDC274267F09B300DD259D /* Builder */,
 				73CDC271267F033600DD259D /* Network task */,
 				73CDC267267E580000DD259D /* Models */,
 				73CDC252267E3F0C00DD259D /* AQIViewController.swift */,
@@ -111,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				73CDC26F267E80E000DD259D /* ColorUtil.swift */,
+				73202E34267F4BB10047B399 /* Env.swift */,
+				73202E36267F4BE00047B399 /* FontDefaults.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -139,6 +186,14 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		7654D304819D16114E1F2E8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA594D84C2254CD8EC1E47 /* Pods_AirQualityIndex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73CDC25F267E3F0C00DD259D /* Build configuration list for PBXNativeTarget "AirQualityIndex" */;
 			buildPhases = (
+				BAC87AD5AD09F3D6CD56E6BC /* [CP] Check Pods Manifest.lock */,
 				73CDC247267E3F0B00DD259D /* Sources */,
 				73CDC248267E3F0B00DD259D /* Frameworks */,
 				73CDC249267E3F0B00DD259D /* Resources */,
+				E7720EA9201F0BD7E113D228 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,7 +232,7 @@
 				};
 			};
 			buildConfigurationList = 73CDC246267E3F0B00DD259D /* Build configuration list for PBXProject "AirQualityIndex" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -205,6 +262,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BAC87AD5AD09F3D6CD56E6BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirQualityIndex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7720EA9201F0BD7E113D228 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirQualityIndex/Pods-AirQualityIndex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73CDC247267E3F0B00DD259D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,9 +317,14 @@
 				73CDC253267E3F0C00DD259D /* AQIViewController.swift in Sources */,
 				73CDC24F267E3F0C00DD259D /* AppDelegate.swift in Sources */,
 				73CDC279267F21C000DD259D /* BaseNavigationController.swift in Sources */,
+				73202E37267F4BE00047B399 /* FontDefaults.swift in Sources */,
+				73202E39267F5ED60047B399 /* AQIDetailPresenter.swift in Sources */,
 				73CDC26D267E7A5600DD259D /* CityAQITableCell.swift in Sources */,
 				73CDC251267E3F0C00DD259D /* SceneDelegate.swift in Sources */,
+				73202E33267F47E70047B399 /* AppRouter.swift in Sources */,
+				73202E30267F47880047B399 /* AQIDetailController.swift in Sources */,
 				73CDC270267E80E000DD259D /* ColorUtil.swift in Sources */,
+				73202E35267F4BB10047B399 /* Env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +468,7 @@
 		};
 		73CDC260267E3F0C00DD259D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8435F58D3876004068F020C7 /* Pods-AirQualityIndex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +497,7 @@
 		};
 		73CDC261267E3F0C00DD259D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2574F70D2C057238EE922256 /* Pods-AirQualityIndex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

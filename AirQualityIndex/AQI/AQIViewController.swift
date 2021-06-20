@@ -57,6 +57,9 @@ extension AQIViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("did select row \(indexPath.row)")
+        if let city = presenter?.getCityData(forRow: indexPath.row) {
+            AppRouter.shared.navigateToDetailView(cityData: city, navigationController: navigationController ?? UINavigationController())
+        }
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 struct Constants {
     static let aqiViewController = "AQIViewController"
+    static let aqiDetailController = "AQIDetailController"
     static let mainStoryboard = "Main"
 }
 
@@ -31,6 +32,16 @@ class ObjectBuilderTask {
             rootVC.insertDependency(presenter: presenter)
             let rootNC = BaseNavigationController(rootViewController: rootVC)
             return rootNC
+        }
+        return nil
+    }
+    
+    func getAQIDetailController(cityData: CityDataModel) -> AQIDetailController? {
+        let storyboard = UIStoryboard(name: Constants.mainStoryboard, bundle: nil)
+        if let detailVC = storyboard.instantiateViewController(withIdentifier: Constants.aqiDetailController) as? AQIDetailController {
+            let presenter = AQIDetailPresenter(cityModel: cityData)
+            detailVC.configureDependencies(presenter: presenter)
+            return detailVC
         }
         return nil
     }
