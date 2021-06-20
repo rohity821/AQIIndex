@@ -23,6 +23,9 @@ class AppBuilderTask {
     
     static let shared = AppBuilderTask()
     
+    /// Use this function to get root view controller configured with required dependencies
+    ///  - Returns:
+    /// - UINavigationController - a object which needs to be be set as root view controller for the app
     func getRootViewControllerWithDependencies() -> UINavigationController? {
         let storyboard = UIStoryboard(name: Constants.mainStoryboard, bundle: nil)
         if let rootVC = storyboard.instantiateViewController(withIdentifier: Constants.aqiViewController) as? AQIViewController {
@@ -36,6 +39,11 @@ class AppBuilderTask {
         return nil
     }
     
+    /// Use this function to get AQI Detail controller object for the selected city from cell.
+    ///  - Parameters
+    ///  - cityData: A object of city data model which is the selected city from the table on list controller.
+    ///  - Returns
+    ///  - an object of AQI detail controller which needs to be pushed on view for displaying chart values.
     func getAQIDetailController(cityData: CityDataModel) -> AQIDetailController? {
         let storyboard = UIStoryboard(name: Constants.mainStoryboard, bundle: nil)
         if let detailVC = storyboard.instantiateViewController(withIdentifier: Constants.aqiDetailController) as? AQIDetailController {

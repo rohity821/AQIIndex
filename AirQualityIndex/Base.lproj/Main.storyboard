@@ -21,26 +21,26 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cityAqiIndexCell" id="YwV-aA-FgO" customClass="CityAQITableCell" customModule="AirQualityIndex" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="150.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YwV-aA-FgO" id="2Ya-Yp-eip">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-4x-Jw2">
-                                                    <rect key="frame" x="10" y="21" width="394" height="128.5"/>
+                                                    <rect key="frame" x="10" y="21" width="394" height="129"/>
                                                     <subviews>
                                                         <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsG-Jt-t7Q">
-                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="128.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="129"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d0Z-Xs-5Wl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="128"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="129"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64W-Kc-Lc8">
-                                                                        <rect key="frame" x="-1" y="-1" width="154" height="0.0"/>
+                                                                        <rect key="frame" x="-1" y="-1" width="154" height="1"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nj0-uC-rej">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="154" height="0.0"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="154" height="1"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         </view>
                                                                         <vibrancyEffect>
@@ -54,13 +54,13 @@
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nP-Kq-JM3">
-                                                            <rect key="frame" x="15" y="10" width="101" height="72.5"/>
+                                                            <rect key="frame" x="15" y="10" width="101" height="73"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                             <color key="textColor" white="0.14999999999999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-OB-XBs">
-                                                            <rect key="frame" x="259" y="10" width="120" height="72.5"/>
+                                                            <rect key="frame" x="259" y="10" width="120" height="73"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="120" id="PWm-bs-op6"/>
                                                             </constraints>
@@ -69,7 +69,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="updated 30 seconds ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGS-Ca-2w3">
-                                                            <rect key="frame" x="15" y="97.5" width="364" height="21"/>
+                                                            <rect key="frame" x="15" y="98" width="364" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="fbn-rr-8V6"/>
                                                             </constraints>

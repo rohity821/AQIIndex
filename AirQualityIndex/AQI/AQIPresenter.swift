@@ -15,6 +15,9 @@ protocol AQIPresenterDelegate: AnyObject {
 
 protocol AQIPresenterInterface {
     
+    /// Configure delegate of presenter with delegate var
+    var delegate: AQIPresenterDelegate? { get set }
+    
     /// Use this function to get number of rows in the section
     /// - Parameters
     /// - section : Section number for which we need the number of rows
@@ -22,18 +25,17 @@ protocol AQIPresenterInterface {
     ///  - Int - This method returns the number of rows in the given section
     func numberOfRowsInSection(section: Int) -> Int
     
+    /// Use this function to get city data model for selected row in table view.
     func getCityData(forRow row: Int) -> CityDataModel?
     
+    /// Call this function to start listening to socket connection
     func startListeningToSocket()
-    
-    var delegate: AQIPresenterDelegate? { get set }
-    
 }
 
 class AQIPresenter: AQIPresenterInterface, AQIInteractorDelegate {
     
-    var aqiData: AQIDataModel?
-    var interactor: AQIInteractor?
+    private var aqiData: AQIDataModel?
+    private var interactor: AQIInteractor?
     
     weak var delegate: AQIPresenterDelegate?
     
@@ -42,6 +44,7 @@ class AQIPresenter: AQIPresenterInterface, AQIInteractorDelegate {
         interactor.delegate = self
     }
     
+    //MARK: AQIPresenterInterface
     func startListeningToSocket() {
         interactor?.startListeningForMessages()
     }

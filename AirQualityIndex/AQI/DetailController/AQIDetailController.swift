@@ -11,7 +11,7 @@ import SwiftCharts
 class AQIDetailController: UIViewController {
 
     var city: CityDataModel?
-    private var presenter: AQIDetailPresenter?
+    private var presenter: AQIDetailPresenterInterface?
     
     private var chart: Chart?
     private let sideSelectorHeight: CGFloat = 50
@@ -23,7 +23,7 @@ class AQIDetailController: UIViewController {
         configureNavigationBar()
     }
     
-    func configureDependencies(presenter: AQIDetailPresenter) {
+    func configureDependencies(presenter: AQIDetailPresenterInterface) {
         self.presenter = presenter
     }
     

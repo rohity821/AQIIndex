@@ -26,10 +26,12 @@ class CityAQITableCell: UITableViewCell {
         containerView.backgroundColor = UIColor(red: 74, green: 80, blue: 91, alpha: 1.0)
     }
     
-    func configureContainerView() {
-        containerView.layer.cornerRadius = 12.0
-    }
-
+    /// Use this function to update city, aqiIndex and updated at string for cell. This function also updates the background color
+    ///  of cell
+    ///  - Parameters
+    ///  - city: name of the city
+    ///  - aqiIndex: AQI index of the city
+    ///  - updatedAt - `Date` object which signify the time when the object was last updated.
     func update(city: String, aqiIndex: Double?, updatedAt: Date? = Date()) {
         cityNameLabel.text = city
         if let index = aqiIndex {
@@ -41,6 +43,11 @@ class CityAQITableCell: UITableViewCell {
         if let updated = updatedAt {
             updatedAtLabel.text = getDifference(updatedTime: updated)
         }
+    }
+    
+    //MARK: Private helper functions
+    private func configureContainerView() {
+        containerView.layer.cornerRadius = 12.0
     }
     
     private func getDifference(updatedTime: Date) -> String {

@@ -10,6 +10,11 @@ import UIKit
 
 class ColorUtil {
     
+    /// Use this function to get color as per the AQI index of city
+    /// - Parameters
+    /// - aqiIndex - double value indicating the current air quality index of the selected city
+    /// - Returns
+    /// - `UIColor` as per the AQI
     static func getColor(forAQI aqiIndex: Double) -> UIColor{
         let bgColor: UIColor
         if aqiIndex >= 0 && aqiIndex < 51 {
@@ -31,14 +36,7 @@ class ColorUtil {
     }
 }
 
-extension Double {
-
-    func rounded(toPlaces places:Int) -> Double {
-        let divisor = pow(10.0, Double(places))
-        return (self * divisor).rounded() / divisor
-    }
-}
-
+/// Extension with all the colors for AQI index
 extension UIColor {
     class var goodAQIColor: UIColor {
         return UIColor(red: 86/255, green: 168/255, blue: 79/255, alpha: 1.0)

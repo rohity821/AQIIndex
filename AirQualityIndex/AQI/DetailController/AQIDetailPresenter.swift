@@ -10,9 +10,11 @@ import SwiftCharts
 
 protocol AQIDetailPresenterInterface {
     func getBarModelsArray(labelSettings: ChartLabelSettings) -> [ChartStackedBarModel]
+    
+    func getTitle() -> String
 }
 
-class AQIDetailPresenter {
+class AQIDetailPresenter: AQIDetailPresenterInterface {
     
     var city: CityDataModel?
     

@@ -12,6 +12,7 @@
 		73202E35267F4BB10047B399 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E34267F4BB10047B399 /* Env.swift */; };
 		73202E37267F4BE00047B399 /* FontDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E36267F4BE00047B399 /* FontDefaults.swift */; };
 		73202E39267F5ED60047B399 /* AQIDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E38267F5ED60047B399 /* AQIDetailPresenter.swift */; };
+		73202E3B267F65010047B399 /* DoubleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73202E3A267F65010047B399 /* DoubleUtil.swift */; };
 		73CDC24F267E3F0C00DD259D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC24E267E3F0C00DD259D /* AppDelegate.swift */; };
 		73CDC251267E3F0C00DD259D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC250267E3F0C00DD259D /* SceneDelegate.swift */; };
 		73CDC253267E3F0C00DD259D /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDC252267E3F0C00DD259D /* AQIViewController.swift */; };
@@ -37,6 +38,7 @@
 		73202E34267F4BB10047B399 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		73202E36267F4BE00047B399 /* FontDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDefaults.swift; sourceTree = "<group>"; };
 		73202E38267F5ED60047B399 /* AQIDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIDetailPresenter.swift; sourceTree = "<group>"; };
+		73202E3A267F65010047B399 /* DoubleUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleUtil.swift; sourceTree = "<group>"; };
 		73CDC24B267E3F0C00DD259D /* AirQualityIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQualityIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CDC24E267E3F0C00DD259D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73CDC250267E3F0C00DD259D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				73CDC26F267E80E000DD259D /* ColorUtil.swift */,
 				73202E34267F4BB10047B399 /* Env.swift */,
 				73202E36267F4BE00047B399 /* FontDefaults.swift */,
+				73202E3A267F65010047B399 /* DoubleUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				73202E39267F5ED60047B399 /* AQIDetailPresenter.swift in Sources */,
 				73CDC26D267E7A5600DD259D /* CityAQITableCell.swift in Sources */,
 				73CDC251267E3F0C00DD259D /* SceneDelegate.swift in Sources */,
+				73202E3B267F65010047B399 /* DoubleUtil.swift in Sources */,
 				73202E33267F47E70047B399 /* AppRouter.swift in Sources */,
 				73202E30267F47880047B399 /* AQIDetailController.swift in Sources */,
 				73CDC270267E80E000DD259D /* ColorUtil.swift in Sources */,
